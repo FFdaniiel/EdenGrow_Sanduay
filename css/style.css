@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+:root {
+    --tipografia-comun: 'Montserrat', sans-serif;
+    --green-1: #618264;
+    --green-2: #79AC78;
+    --green-3: #B0D9B1;
+    --black: #000;
+}
+
+/* Generales */
+
+html {
+    /* 1rem = 10px */
+    font-size: 62.5%;
+}
+
+body {
+    font-family: var(--tipografia-comun);
+    font-size: 1.6rem;
+    background: var(--green-3);
+}
+
+/* Header */
+
+.logo-img {
+    width: 100px;
+}
+
+.logo-txt {
+    line-height: 0;
+    padding-bottom: 1rem;
+    color: var(--green-3);
+    font-size: 1.7rem;
+    font-weight: 700;
+}
+.logo-txt:hover {
+    color: var(--green-1);
+}
+.navbar-toggler {
+    background: var(--green-3);
+}
+
+.navbar-nav {
+    text-align: end;
+}
+
+.nav-link{
+    color: var(--green-2);
+}
+
+/* Carousel */
+
+.btn-carousel {
+    background: rgba(121,172,120,0.38);
+    width: 100px;
+}
