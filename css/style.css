@@ -1,7 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Roboto:wght@100;300;400;500;700;900&display=swap');
 :root {
     --tipografia-comun: 'Montserrat', sans-serif;
+    --tipografia-titulo:'Dancing Script', cursive;
+    --green-0: #004225;
     --green-1: #618264;
     --green-2: #79AC78;
     --green-3: #B0D9B1;
@@ -18,7 +20,12 @@ html {
 body {
     font-family: var(--tipografia-comun);
     font-size: 1.6rem;
-    background: var(--green-3);
+    background-image: url("../img/bg-body.webp");
+
+}
+
+textarea {
+    resize: none;
 }
 
 /* Header */
@@ -55,3 +62,64 @@ body {
     background: rgba(121,172,120,0.38);
     width: 100px;
 }
+
+.bg-color {
+    background-color: var(--green-2)!important;
+}
+
+/* Sobre nosotros */
+
+.bg-container {
+    background: var(--green-3);
+}
+.sobre-nosotros__subtitulo, .sobre-nosotros__titulo {
+    color: var(--green-0);
+    font-family: var(--tipografia-titulo);
+    font-weight: 700;
+    font-size: 2.3rem;
+}
+.sobre-nosotros__titulo {
+    font-size: 6.5rem;
+}
+
+.color-sobre {
+    color: var(--green-0);
+    border-bottom: 1px solid var(--green-2);
+}
+
+/* productos */
+
+
+.card:hover {
+    scale: 1.02;
+    transition: all .7s;
+}
+
+/* Preguntas frecuentes */
+
+
+.btn-pregunta {
+    background: var(--green-2);
+    color: #fff;
+    font-size: 2rem;
+    transition: all .7s;
+}
+
+.btn-pregunta:hover{
+    color: var(--green-0)!important;
+    background-color: var(--green-2)!important;
+    transition: all .7s;
+
+}
+/* Footer */
+
+.bg-footer {
+    background: var(--green-3)!important;
+}
+
+.footer-color {
+    color: var(--green-0)!important;
+    transition: all .6s;
+
+}
+
