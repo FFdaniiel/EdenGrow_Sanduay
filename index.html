@@ -18,13 +18,13 @@
         <nav id="inicio" class="navbar navbar-expand-lg bg-light">
             <div class="container-fluid">
                 <a class="navbar-brand text-center logo-txt d-lg-flex flex-column " href="./index.html">
-                    <img src="./img/Logo.png" alt="logo" class="logo-img align-self-md-center">
-                    EdenGrow
+                    <img src="./img/Logo.png" alt="logo" class="align-self-md-center">
+                    <h3>EdenGrow</h3>
                 </a>
                 <!-- Right Element-->
                 <div class="d-flex align-items-center order-lg-3 ">
                     <!-- Icon -->
-                    <a class="link-secondary me-4" href="#">
+                    <a class="link-secondary me-4 " href="#">
                         <i class="fa-brands fa-instagram"></i>
                     </a>
                     <a class="link-secondary me-4" href="#">
@@ -41,22 +41,22 @@
                     <span class="navbar-toggler-icon "></span>
                 </button>
                 <!-- Left Element-->
-                <div class="collapse navbar-collapse justify-content-center " id="navbarNav">
+                <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
                     <ul class="navbar-nav">
                         <li class="nav-item">
                             <a class="nav-link text-uppercase" href="#inicio">inicio</a>
                         </li>
-                        <li class="nav-item text-uppercase">
-                            <a class="nav-link" href="#sobre-nosotros">Nosotros</a>
+                        <li class="nav-item ">
+                            <a class="nav-link text-uppercase" href="#sobre-nosotros">Nosotros</a>
                         </li>
-                        <li class="nav-item text-uppercase">
-                            <a class="nav-link" href="#productos">Productos</a>
+                        <li class="nav-item ">
+                            <a class="nav-link text-uppercase" href="#productos">Productos</a>
                         </li>
-                        <li class="nav-item text-uppercase">
-                            <a class="nav-link" href="#preguntas-frecuentes">faqs</a>
+                        <li class="nav-item ">
+                            <a class="nav-link text-uppercase" href="#preguntas-frecuentes">faqs</a>
                         </li>
-                        <li class="nav-item text-uppercase">
-                            <a class="nav-link" href="#contacto">Contacto</a>
+                        <li class="nav-item ">
+                            <a class="nav-link text-uppercase" href="#contacto">Contacto</a>
                         </li>
                     </ul>
                 </div>
@@ -97,13 +97,13 @@
 
     </header>
 
-    <section id="sobre-nosotros" class="col-12">
-        <div class="container-fluid bg-container px-5 text-center ">
+    <section class="sobre-nosotros" id="sobre-nosotros" class="col-12">
+        <div class="container-fluid px-5 text-center ">
             <h1 class="sobre-nosotros__titulo">EdenGrow</h1>
-            <h3 class="fst-italic sobre-nosotros__subtitulo">donde todo florece</h3>
+            <h3 class="fst-italic sobre-nosotros__subtitulo">donde todo florece 🌱</h3>
             <!-- Card sobre nosotros -->
             <div class="mb-3 p-3">
-                <h5 class="card-title fs-3 text-uppercase color-sobre">Sobre nosotros</h5>
+                <h3 class="card-title fs-3 text-uppercase">Sobre nosotros</h3>
                 <div class="row g-0 py-4">
                     <div class="col-xl-5 order-3">
                         <img src="./img/About-us.jpg" class="img-fluid rounded-end " alt="...">
@@ -240,7 +240,7 @@
                 <!-- Fin card -->
     </section>
 
-    <section id="preguntas-frecuentes" class="col-12 bg-container text-center py-5">
+    <section class="preguntas-frecuentes" id="preguntas-frecuentes" class="col-12 bg-container text-center py-5">
         <div class="container-fluid bg-container px-5 p-3 ">
             <h3 class="text-center text-uppercase p-3 ">Preguntas frecuentes</h3>
             <p class="d-block gap-1">
@@ -311,26 +311,30 @@
         </div>
     </section>
 
-    <section id="contacto" class="productos bg-white ">
+    <section id="contacto" class="contacto bg-white ">
         <div class="container text-center">
 
-            <h3 class="text-center p-3">
+            <h3 class="text-center p-3 text-uppercase">
                 Contactanos!
             </h3>
         </div>
-        <div class="d-md-flex container-fluid flex-nowrap justify-content-center d-sm-block  align-items-center">
+        <div class="d-grid d-md-flex ">
 
-            <div class="col-md-8 col-sm-12">
+            <div class="map col-md-8 col-sm-12">
                 <iframe
                     src="https://www.google.com/maps/embed?pb=!1m13!1m8!1m3!1d11542.503858428787!2d62.18442900000001!3d52.479121000000006!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNTLCsDI4JzQ3LjEiTiA2MsKwMTEnMDguNCJF!5e1!3m2!1ses-419!2sar!4v1698332239210!5m2!1ses-419!2sar"
-                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    width="650" height="550" style="border:0;" allowfullscreen="" loading="lazy"
                     referrerpolicy="no-referrer-when-downgrade" class="container-fluid"></iframe>
             </div>
-            <div class="col-md-4 col-sm-12">
-                <form action="" class="form gap-3 w-100 container-fluid">
+            <div class="form col-md-4 col-sm-12">
+                <form action="" class=" gap-3  container-fluid">
                     <div class="mb-3">
                         <label for="nombre" class="form-label ">Nombre</label>
                         <input required type="text" class="form-control" id="nombre" placeholder="Juan ramon">
+                    </div>
+                    <div class="mb-3">
+                        <label for="asunto" class="form-label ">Asunto</label>
+                        <input required type="text" class="form-control" id="asunto" placeholder="Asunto">
                     </div>
                     <div class="mb-3">
                         <label for="email" class="form-label">Correo</label>
@@ -341,7 +345,7 @@
                         <textarea required class="form-control" id="exampleFormControlTextarea1" rows="10"></textarea>
                     </div>
                     <div class="cmb-3">
-                        <button type="submit" class="btn btn-primary mb-3">Enviar</button>
+                        <button type="submit" class="btn btn-primary w-25 p-3">Enviar</button>
                     </div>
                 </form>
             </div>
@@ -349,7 +353,7 @@
     </section>
 
 
-    <footer class="py-3 bg-footer">
+    <footer class="py-3">
         <ul class="nav justify-content-center color-sobre pb-3 mb-3 ">
             <li class="nav-item">
                 <a class="nav-link text-uppercase" href="#inicio">inicio</a>

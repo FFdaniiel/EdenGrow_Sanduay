@@ -1,0 +1,18 @@
+footer{
+    background: $color-verde-4!important;
+ul{
+li{
+    a{
+        color: $color-verde-3!important;
+        border-bottom: 1px solid transparent;
+        &:hover{
+            border-bottom: 1px solid $color-verde-1;
+        }
+    }
+}
+}
+    .footer-color{
+        color: $color-verde-1!important;
+    }
+}
+

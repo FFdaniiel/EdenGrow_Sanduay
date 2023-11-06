@@ -1,0 +1,22 @@
+.preguntas-frecuentes{
+    background: $color-verde-4;
+    text-align: center;
+div{
+    h3{
+        @include sub-title;
+    }
+}
+}
+
+
+.btn-pregunta{
+    background: $color-verde-3;
+    color: #fff;
+    font-size: 2rem;
+    transition: all .7s;
+    &:hover{
+        color: var(--green-0)!important;
+        background-color: $color-verde-3!important;
+        transition: all .7s;
+    }
+}

@@ -1,0 +1,21 @@
+.productos{
+div{
+    h3{
+        @include sub-title;
+    }
+.col{
+    padding: 1rem;
+
+.card{
+    border-end-end-radius: 2rem;
+    border-end-start-radius: 2rem;
+    border-color: $color-verde-3;
+    transition: scale .7s;
+    &:hover{
+        scale: 1.02;
+        transition: all .7s;
+    }
+}
+}
+}
+}

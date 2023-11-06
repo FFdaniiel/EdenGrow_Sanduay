@@ -1,0 +1,27 @@
+.contacto{
+div{
+    padding-bottom: 1rem;
+    h3{
+        @include sub-title;
+    }
+div{
+    padding: 1rem;
+    align-self: center;
+    padding: 1rem;
+
+    }
+    .form{
+        form{
+            background: $color-verde-4;
+            div{
+                input{
+                    padding: 1rem;
+                }
+
+            }
+        }
+    
+    }
+}
+}
+

@@ -1,126 +1,181 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Roboto:wght@100;300;400;500;700;900&display=swap');
-
-:root {
-    --tipografia-comun: 'Montserrat', sans-serif;
-    --tipografia-titulo:'Dancing Script', cursive;
-    --green-0: #004225;
-    --green-1: #618264;
-    --green-2: #79AC78;
-    --green-3: #B0D9B1;
-    --black: #000;
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Roboto:wght@100;300;400;500;700;900&display=swap");
+/* Generales */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-/* Generales */
-
 html {
-    /* 1rem = 10px */
-    font-size: 62.5%;
+  /* 1rem = 10px */
+  font-size: 62.5%;
 }
 
 body {
-    font-family: var(--tipografia-comun);
-    font-size: 1.6rem;
-    background-image: url("../img/bg-body.webp");
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.6rem;
+  background-image: url("../img/bg-body.webp");
+}
 
+img {
+  width: 100%;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
 }
 
 textarea {
-    resize: none;
+  resize: none;
 }
 
-/* Header */
-
-.logo-img {
-    width: 100px;
+.container-fluid a img {
+  width: 100px;
+}
+.container-fluid a h3 {
+  line-height: 0;
+  padding-bottom: 1rem;
+  color: #79AC78;
+  font-size: 1.7rem;
+  font-weight: 700;
+}
+.container-fluid a h3:hover {
+  color: #004225;
 }
 
-.logo-txt {
-    line-height: 0;
-    padding-bottom: 1rem;
-    color: var(--green-3);
-    font-size: 1.7rem;
-    font-weight: 700;
-}
-.logo-txt:hover {
-    color: var(--green-1);
-}
-.navbar-toggler {
-    background: var(--green-3);
+.link-secondary {
+  font-size: 3rem;
 }
 
 .navbar-nav {
-    text-align: end;
+  text-align: end;
+}
+.navbar-nav .nav-item .nav-link {
+  color: #79AC78;
+  border-bottom: 1px solid transparent;
+}
+.navbar-nav .nav-item .nav-link:hover {
+  color: #004225;
+  line-height: 2rem;
+  border-bottom: 1px solid #79AC78;
 }
 
-.nav-link{
-    color: var(--green-2);
+.navbar-toggler {
+  background: #79AC78;
+  padding: 1.5rem;
+  border-radius: 4rem;
+  box-shadow: -3px 3px 5px -1px rgba(0, 0, 0, 0.34);
 }
 
-/* Carousel */
-
-.btn-carousel {
-    background: rgba(121,172,120,0.38);
-    width: 100px;
+footer {
+  background: #B0D9B1 !important;
+}
+footer ul li a {
+  color: #79AC78 !important;
+  border-bottom: 1px solid transparent;
+}
+footer ul li a:hover {
+  border-bottom: 1px solid #004225;
+}
+footer .footer-color {
+  color: #004225 !important;
 }
 
-.bg-color {
-    background-color: var(--green-2)!important;
+.carousel .carousel-indicators .bg-color {
+  background-color: #618264 !important;
+}
+.carousel .btn-carousel {
+  background: rgba(121, 172, 120, 0.38);
+  width: 100px;
 }
 
-/* Sobre nosotros */
-
-.bg-container {
-    background: var(--green-3);
+.sobre-nosotros div {
+  background: #B0D9B1;
 }
-.sobre-nosotros__subtitulo, .sobre-nosotros__titulo {
-    color: var(--green-0);
-    font-family: var(--tipografia-titulo);
-    font-weight: 700;
-    font-size: 2.3rem;
+.sobre-nosotros div .sobre-nosotros__titulo {
+  color: #004225;
+  font-family: "Dancing Script", cursive;
+  font-weight: 800;
+  font-size: 5rem;
 }
-.sobre-nosotros__titulo {
-    font-size: 6.5rem;
+.sobre-nosotros div .sobre-nosotros__subtitulo {
+  color: #004225;
+  font-family: "Dancing Script", cursive;
+  font-weight: 800;
+  font-size: 5rem;
+  font-size: 3rem;
 }
-
-.color-sobre {
-    color: var(--green-0);
-    border-bottom: 1px solid var(--green-2);
-}
-
-/* productos */
-
-
-.card:hover {
-    scale: 1.02;
-    transition: all .7s;
+.sobre-nosotros div div h3 {
+  color: #004225;
+  border-bottom: 1px solid #618264;
+  margin-bottom: 1rem;
+  padding: 1rem;
 }
 
-/* Preguntas frecuentes */
+.productos div h3 {
+  color: #004225;
+  border-bottom: 1px solid #618264;
+  margin-bottom: 1rem;
+}
+.productos div .col {
+  padding: 1rem;
+}
+.productos div .col .card {
+  border-end-end-radius: 2rem;
+  border-end-start-radius: 2rem;
+  border-color: #79AC78;
+  transition: scale 0.7s;
+}
+.productos div .col .card:hover {
+  scale: 1.02;
+  transition: all 0.7s;
+}
 
+.preguntas-frecuentes {
+  background: #B0D9B1;
+  text-align: center;
+}
+.preguntas-frecuentes div h3 {
+  color: #004225;
+  border-bottom: 1px solid #618264;
+  margin-bottom: 1rem;
+}
 
 .btn-pregunta {
-    background: var(--green-2);
-    color: #fff;
-    font-size: 2rem;
-    transition: all .7s;
+  background: #79AC78;
+  color: #fff;
+  font-size: 2rem;
+  transition: all 0.7s;
+}
+.btn-pregunta:hover {
+  color: var(--green-0) !important;
+  background-color: #79AC78 !important;
+  transition: all 0.7s;
 }
 
-.btn-pregunta:hover{
-    color: var(--green-0)!important;
-    background-color: var(--green-2)!important;
-    transition: all .7s;
-
+.contacto div {
+  padding-bottom: 1rem;
 }
-/* Footer */
-
-.bg-footer {
-    background: var(--green-3)!important;
+.contacto div h3 {
+  color: #004225;
+  border-bottom: 1px solid #618264;
+  margin-bottom: 1rem;
+}
+.contacto div div {
+  padding: 1rem;
+  align-self: center;
+  padding: 1rem;
+}
+.contacto div .form form {
+  background: #B0D9B1;
+}
+.contacto div .form form div input {
+  padding: 1rem;
 }
 
-.footer-color {
-    color: var(--green-0)!important;
-    transition: all .6s;
-
-}
-
+/*# sourceMappingURL=style.css.map */

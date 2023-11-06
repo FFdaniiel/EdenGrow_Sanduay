@@ -1,0 +1,19 @@
+.sobre-nosotros {
+    div{
+        background: $color-verde-4;
+
+    .sobre-nosotros__titulo{
+        @include about-title;
+    }
+    .sobre-nosotros__subtitulo{
+        @include about-title;
+        font-size: $font-xl;
+    }
+    div{
+        h3{
+            @include sub-title;
+            padding: 1rem
+        }
+    }
+    }
+}
