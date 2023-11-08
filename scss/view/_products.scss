@@ -7,13 +7,16 @@ div{
     padding: 1rem;
 
 .card{
-    border-end-end-radius: 2rem;
-    border-end-start-radius: 2rem;
-    border-color: $color-verde-3;
-    transition: scale .7s;
+    border: none;
+    transition: scale .7s ease-out;
     &:hover{
         scale: 1.02;
-        transition: all .7s;
+    }
+    .card-body{
+        border: 1px solid $color-verde-3;
+        border-top: none;
+        border-end-end-radius: 2rem;
+        border-end-start-radius: 2rem;
     }
 }
 }

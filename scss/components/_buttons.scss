@@ -1,0 +1,15 @@
+.btn{
+    font-size: $font-medium;
+    color: #fff;
+    border-color: $color-verde-3;
+    background-color: $color-verde-3;
+    transition: all .5s 0s ease-in;
+    &:hover{
+        color: $color-verde-1;
+        border-color: $color-verde-1;
+        background-color: $color-verde-4;
+        border-top-left-radius: 0%;
+        border-bottom-left-radius: 0%;
+        border-bottom-right-radius: 1rem;
+    }
+}

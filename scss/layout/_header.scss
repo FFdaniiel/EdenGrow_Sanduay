@@ -1,4 +1,7 @@
-
+.navbar {
+    width: 100%;
+    transition: top .3s;
+}
 .container-fluid{
     a{
     img{
@@ -32,6 +35,13 @@
         color: $color-verde-1;
         line-height: 2rem;
         border-bottom: 1px solid $color-verde-3;
+        @include mb(991px) {
+            line-height: normal;
+        }
+    }
+    @include mb(991px){        
+        display: inline-block;
+        line-height: normal;
     }
 }
 }
