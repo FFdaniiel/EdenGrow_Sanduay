@@ -1,21 +1,28 @@
 .contacto{
-div{
-    padding-bottom: 1rem;
-    h3{
-        @include sub-title;
+    width: 100%;
+    padding: 1rem 3rem;
+    @include mb(767px){
+        padding: 1rem .5rem
     }
+h3{
+    @include sub-title;
+}
 div{
-    padding: 1rem;
-    align-self: center;
-    padding: 1rem;
-
+    width: 0 auto;
     }
     .form{
         form{
+            padding: 1rem;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
             background: $color-verde-4;
             div{
                 input{
-                    padding: 1rem;
+                    font-size: $font-medium;
+                    width: 100%;
+                    padding: .5rem;
                 }
 
             }
@@ -23,5 +30,5 @@ div{
     
     }
 }
-}
+
 
