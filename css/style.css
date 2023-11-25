@@ -183,7 +183,7 @@ footer .footer-color {
     fill: hsla(189, 68%, 75%, 0);
   }
 }
-.inicio-portada .inicio-portada-container .inicio-portada-title h3 {
+.inicio-portada .inicio-portada-container .inicio-portada-title h1 {
   color: #fff;
   font-family: "Dancing Script", cursive;
   font-weight: 800;
@@ -194,13 +194,13 @@ footer .footer-color {
   left: 50%;
 }
 @media screen and (max-width: 1279px) {
-  .inicio-portada .inicio-portada-container .inicio-portada-title h3 {
+  .inicio-portada .inicio-portada-container .inicio-portada-title h1 {
     letter-spacing: 2px;
     padding: 0.5rem;
   }
 }
 @media screen and (max-width: 768px) {
-  .inicio-portada .inicio-portada-container .inicio-portada-title h3 {
+  .inicio-portada .inicio-portada-container .inicio-portada-title h1 {
     font-size: 1.6rem;
   }
 }
