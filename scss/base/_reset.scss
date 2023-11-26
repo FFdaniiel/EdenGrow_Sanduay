@@ -9,12 +9,13 @@
 html {
     /* 1rem = 10px */
     font-size: 62.5%;
+    scroll-behavior: smooth;
+
 }
 body {
     font-family: $fuente-principal;
     font-size: $font-medium;
     background: $color-verde-4;
-
 }
 img {
     width: 100%;

@@ -19,30 +19,79 @@
         }
     }
     }
-}
-.link-secondary{
-    font-size: $font-xl;
-}
-
-.navbar-nav{
-    text-align: end;
-    
-.nav-item {
-.nav-link {
-    color: $color-verde-3;
-    border-bottom: 1px solid transparent;
-    &:hover{
-        color: $color-verde-1;
-        line-height: 2rem;
-        border-bottom: 1px solid $color-verde-3;
-        @include mb(991px) {
-            line-height: normal;
+    .link-secondary{
+        font-size: $font-xl;
+        @include mb(575px) {
+            font-size: $font-medium;
         }
     }
-    @include mb(991px){        
-        display: inline-block;
-        line-height: normal;
+    .nav-collap{
+        .navbar-nav{
+            text-align: end;
+            
+        .nav-item {
+        .nav-link {
+            color: $color-verde-3;
+            border-bottom: 1px solid transparent;
+            transition: border-bottom .4s ease-in-out;
+            &:hover{
+                color: $color-verde-1;
+                line-height: 2rem;
+                border-bottom: 1px solid $color-verde-3;
+                @include mb(991px) {
+
+                    line-height: normal;
+                }
+            }
+            @include mb(991px){ 
+                display: inline-block;
+                line-height: normal;
+            }
+        }
+        }
+    }
     }
 }
+
+.navbar-toggler{
+    & span {
+        display: block;
+        background-color: #4f4f4f;
+        height: 2px;
+        width: 23px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        position: relative;
+        left: 0;
+        opacity: 1;
+        transition: all 0.35s ease-out;
+        transform-origin: center left;
+    &:nth-child(1) {
+        // margin-top: 0.1em;
+        transform: translate(15%, -33%) rotate(45deg);
+    }
+
+    &:nth-child(1){
+        transform: translate(0%, 0%) rotate(0deg) ;
+
+    }
+    &:nth-child(2){
+        opacity: 1;
+
+    }
+    &:nth-child(3){
+        transform: translate(0%, 0%) rotate(0deg) ;
+
+    }
 }
+    &:not(.collapsed) span:nth-child(1){
+        transform: translate(15%, -33%) rotate(45deg);
+        
+    }
+    &:not(.collapsed) span:nth-child(2){
+        opacity: 0;
+    }
+    &:not(.collapsed) span:nth-child(3){
+        transform: translate(15%, 33%) rotate(-45deg)
+    }
 }

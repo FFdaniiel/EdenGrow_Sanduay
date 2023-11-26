@@ -6,11 +6,19 @@
 }
 
 @mixin sub-title{
+    background-image: url(./../../img/about-titulo.jpeg);
+    background-position: center;
     font-family: $fuente-titulo;
     font-weight: 800;
-    color: $color-verde-1;
-    border-bottom: 1px solid $color-verde-2;
-    margin-bottom: 1rem
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100px;
+}
+@mixin sub-title-backgr{
+    background-image: url(./../../img/about-titulo.jpeg);
+    background-position: center;
 }
 
 @mixin mb( $medida: 480px){

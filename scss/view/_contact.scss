@@ -1,14 +1,14 @@
 .contacto{
     width: 100%;
-    padding: 1rem 3rem;
-    @include mb(767px){
-        padding: 1rem .5rem
-    }
+
 h3{
     @include sub-title;
 }
 div{
-    width: 0 auto;
+    padding: 1rem 3rem;
+    @include mb(575px){
+        padding: 1rem .5rem;
+    }
     }
     .form{
         form{

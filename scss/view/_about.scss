@@ -1,11 +1,33 @@
 .sobre-nosotros {
     div{
+        @include mb(575px){
+            padding: 1rem;
     
+        }
     div{
-        h3{
-            @include sub-title;
-            padding: 1rem
+
+        .sobre-title{
+            background-image: url(./../../img/about-titulo.jpeg);
+            background-position: center;
+            width: 100%;
+            h3{
+                @include sub-title;
+                color: #fff;
+                padding: 1rem;
+            }
+
+        }
+        .sobre-img{
+            display: flex;
+            justify-content: space-between;
+            img{
+                width: 800px;
+            }
+            
         }
     }
     }
+}
+.sobre-img-sub{
+    height: 200px;
 }

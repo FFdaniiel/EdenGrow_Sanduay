@@ -1,7 +1,13 @@
 .productos{
+    padding: 0;
 div{
+    .productos-title{
+        background-image: url(./../../img/about-titulo.jpeg);
+        background-position: center;
+    }
     h3{
         @include sub-title;
+        height: 100px;
     }
 .row{
     @include mb(575px){
