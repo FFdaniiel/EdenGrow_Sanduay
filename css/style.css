@@ -167,13 +167,8 @@ footer .footer-color {
     padding: 1rem;
   }
 }
-.sobre-nosotros div div .sobre-title {
-  background-image: url(./../../img/about-titulo.jpeg);
-  background-position: center;
-  width: 100%;
-}
-.sobre-nosotros div div .sobre-title h3 {
-  background-image: url(./../../img/about-titulo.jpeg);
+.sobre-nosotros div .sobre-title h3 {
+  background-image: url(./../../img/about-titulo.webp);
   background-position: center;
   font-family: "Dancing Script", cursive;
   font-weight: 800;
@@ -184,13 +179,6 @@ footer .footer-color {
   height: 100px;
   color: #fff;
   padding: 1rem;
-}
-.sobre-nosotros div div .sobre-img {
-  display: flex;
-  justify-content: space-between;
-}
-.sobre-nosotros div div .sobre-img img {
-  width: 800px;
 }
 
 .sobre-img-sub {
@@ -288,7 +276,7 @@ footer .footer-color {
   background-position: center;
 }
 .productos div h3 {
-  background-image: url(./../../img/about-titulo.jpeg);
+  background-image: url(./../../img/about-titulo.webp);
   background-position: center;
   font-family: "Dancing Script", cursive;
   font-weight: 800;
@@ -323,7 +311,7 @@ footer .footer-color {
 }
 
 .preguntas-frecuentes h3 {
-  background-image: url(./../../img/about-titulo.jpeg);
+  background-image: url(./../../img/about-titulo.webp);
   background-position: center;
   font-family: "Dancing Script", cursive;
   font-weight: 800;
@@ -351,7 +339,7 @@ footer .footer-color {
   width: 100%;
 }
 .contacto h3 {
-  background-image: url(./../../img/about-titulo.jpeg);
+  background-image: url(./../../img/about-titulo.webp);
   background-position: center;
   font-family: "Dancing Script", cursive;
   font-weight: 800;

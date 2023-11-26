@@ -6,7 +6,7 @@
 }
 
 @mixin sub-title{
-    background-image: url(./../../img/about-titulo.jpeg);
+    background-image: url(./../../img/about-title.webp);
     background-position: center;
     font-family: $fuente-titulo;
     font-weight: 800;
@@ -15,10 +15,6 @@
     flex-direction: column;
     justify-content: center;
     height: 100px;
-}
-@mixin sub-title-backgr{
-    background-image: url(./../../img/about-titulo.jpeg);
-    background-position: center;
 }
 
 @mixin mb( $medida: 480px){
