@@ -1,18 +1,11 @@
 .preguntas-frecuentes{
-    
-    height: 500px;
-    background: $color-verde-4;
     text-align: center;
-    div{
-        h3{
-            @include sub-title;
+    h3{
+        width: 97%;
+        @include sub-title;
 
-        }
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-        
     }
+
 }
 
 

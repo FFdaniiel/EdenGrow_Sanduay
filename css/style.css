@@ -15,7 +15,7 @@ html {
 body {
   font-family: "Montserrat", sans-serif;
   font-size: 1.6rem;
-  background-image: url("../img/bg-body.webp");
+  background: #B0D9B1;
 }
 
 img {
@@ -111,11 +111,8 @@ textarea {
   box-shadow: -3px 3px 5px -1px rgba(0, 0, 0, 0.34);
 }
 
-footer {
-  background: #B0D9B1 !important;
-}
 footer ul li a {
-  color: #79AC78 !important;
+  color: #618264 !important;
   border-bottom: 1px solid transparent;
 }
 footer ul li a:hover {
@@ -125,9 +122,6 @@ footer .footer-color {
   color: #004225 !important;
 }
 
-.sobre-nosotros div {
-  background: #B0D9B1;
-}
 .sobre-nosotros div div h3 {
   font-family: "Dancing Script", cursive;
   font-weight: 800;
@@ -236,16 +230,10 @@ footer .footer-color {
 }
 
 .preguntas-frecuentes {
-  height: 500px;
-  background: #B0D9B1;
   text-align: center;
 }
-.preguntas-frecuentes div {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-}
-.preguntas-frecuentes div h3 {
+.preguntas-frecuentes h3 {
+  width: 97%;
   font-family: "Dancing Script", cursive;
   font-weight: 800;
   color: #004225;
