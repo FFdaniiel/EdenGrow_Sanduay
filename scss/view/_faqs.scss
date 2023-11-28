@@ -1,4 +1,5 @@
 .preguntas-frecuentes{
+    overflow: hidden;
     h3{
         background-image: url('./../img/img-title/about-title.webp');
         @include sub-title;

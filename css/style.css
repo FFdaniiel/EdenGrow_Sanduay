@@ -225,6 +225,7 @@ footer .footer-color {
 
 .inicio-portada {
   width: 100%;
+  overflow: hidden;
 }
 .inicio-portada .inicio-portada-container img {
   width: 100%;
@@ -347,6 +348,9 @@ footer .footer-color {
   border-end-start-radius: 2rem;
 }
 
+.preguntas-frecuentes {
+  overflow: hidden;
+}
 .preguntas-frecuentes h3 {
   background-image: url("./../img/img-title/about-title.webp");
   background-position: center;
