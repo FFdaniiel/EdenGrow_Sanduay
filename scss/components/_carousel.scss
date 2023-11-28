@@ -1,4 +1,7 @@
 .carousel {
+    @include mb(575px){
+       display: none;
+    }
     .carousel-indicators {
         .bg-color {
             background-color: $color-verde-2!important;

@@ -1,10 +1,12 @@
 footer{
     
-ul{
-li{
-    a{
+.nav{
+.nav-item{
+    .nav-link{
+        
         color: $color-verde-2!important;
         border-bottom: 1px solid transparent;
+        transition: border-bottom .4s ease-in-out;
         &:hover{
             border-bottom: 1px solid $color-verde-1;
         }

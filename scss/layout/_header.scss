@@ -21,8 +21,21 @@
     }
     .link-secondary{
         font-size: $font-xl;
-        @include mb(575px) {
-            font-size: $font-medium;
+        i{
+            color: $color-verde-4;
+        &.fa-instagram:hover{
+            background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+
+        }
+        &.fa-square-facebook:hover{
+            color: #3b5998;
+        }
+        &.fa-whatsapp:hover{
+            color: #25D366;
+        }
         }
     }
     .nav-collap{
@@ -36,10 +49,8 @@
             transition: border-bottom .4s ease-in-out;
             &:hover{
                 color: $color-verde-1;
-                line-height: 2rem;
                 border-bottom: 1px solid $color-verde-3;
                 @include mb(991px) {
-
                     line-height: normal;
                 }
             }

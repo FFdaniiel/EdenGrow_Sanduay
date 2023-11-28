@@ -35,6 +35,24 @@ textarea {
   resize: none;
 }
 
+::-webkit-scrollbar {
+  width: 18px;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #79AC78;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #618264;
+}
+
 .btn {
   font-size: 1.6rem;
   color: #fff;
@@ -51,6 +69,11 @@ textarea {
   border-bottom-right-radius: 1rem;
 }
 
+@media screen and (max-width: 575px) {
+  .carousel {
+    display: none;
+  }
+}
 .carousel .carousel-indicators .bg-color {
   background-color: #618264 !important;
 }
@@ -79,10 +102,20 @@ textarea {
 .container-fluid .link-secondary {
   font-size: 3rem;
 }
-@media screen and (max-width: 575px) {
-  .container-fluid .link-secondary {
-    font-size: 1.6rem;
-  }
+.container-fluid .link-secondary i {
+  color: #B0D9B1;
+}
+.container-fluid .link-secondary i.fa-instagram:hover {
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.container-fluid .link-secondary i.fa-square-facebook:hover {
+  color: #3b5998;
+}
+.container-fluid .link-secondary i.fa-whatsapp:hover {
+  color: #25D366;
 }
 .container-fluid .nav-collap .navbar-nav {
   text-align: end;
@@ -94,7 +127,6 @@ textarea {
 }
 .container-fluid .nav-collap .navbar-nav .nav-item .nav-link:hover {
   color: #004225;
-  line-height: 2rem;
   border-bottom: 1px solid #79AC78;
 }
 @media screen and (max-width: 991px) {
@@ -151,11 +183,12 @@ textarea {
   box-shadow: -3px 3px 5px -1px rgba(0, 0, 0, 0.34);
 }
 
-footer ul li a {
+footer .nav .nav-item .nav-link {
   color: #618264 !important;
   border-bottom: 1px solid transparent;
+  transition: border-bottom 0.4s ease-in-out;
 }
-footer ul li a:hover {
+footer .nav .nav-item .nav-link:hover {
   border-bottom: 1px solid #004225;
 }
 footer .footer-color {
@@ -163,12 +196,12 @@ footer .footer-color {
 }
 
 @media screen and (max-width: 575px) {
-  .sobre-nosotros div {
-    padding: 1rem;
+  .sobre-nosotros {
+    padding: 0;
   }
 }
 .sobre-nosotros div .sobre-title h3 {
-  background-image: url(./../img/about-title.webp);
+  background-image: url("./../img/img-title/about-title.webp");
   background-position: center;
   font-family: "Dancing Script", cursive;
   font-weight: 800;
@@ -179,6 +212,11 @@ footer .footer-color {
   height: 100px;
   color: #fff;
   padding: 1rem;
+}
+@media screen and (max-width: 575px) {
+  .sobre-nosotros div .sobre-title {
+    padding-top: 1rem;
+  }
 }
 
 .sobre-img-sub {
@@ -272,11 +310,10 @@ footer .footer-color {
   padding: 0;
 }
 .productos div .productos-title {
-  background-image: url(./../img/about-title.webp);
+  background-image: url("./../img/img-title/about-title.webp") !important;
   background-position: center;
 }
 .productos div h3 {
-  background-image: url(./../img/about-title.webp);
   background-position: center;
   font-family: "Dancing Script", cursive;
   font-weight: 800;
@@ -311,7 +348,7 @@ footer .footer-color {
 }
 
 .preguntas-frecuentes h3 {
-  background-image: url(./../img/about-title.webp);
+  background-image: url("./../img/img-title/about-title.webp");
   background-position: center;
   font-family: "Dancing Script", cursive;
   font-weight: 800;
@@ -321,9 +358,25 @@ footer .footer-color {
   justify-content: center;
   height: 100px;
 }
+.preguntas-frecuentes .card-body {
+  width: 50% !important;
+  margin-left: 25% !important;
+}
+@media screen and (max-width: 1536px) {
+  .preguntas-frecuentes .card-body {
+    width: 100% !important;
+    margin-left: 0 !important;
+  }
+}
+@media screen and (max-width: 768px) {
+  .preguntas-frecuentes .card-body {
+    width: 100% !important;
+    margin-left: 0 !important;
+  }
+}
 
 .btn-pregunta {
-  width: 100%;
+  width: 50%;
   background: #79AC78;
   color: #fff;
   font-size: 2rem;
@@ -334,12 +387,22 @@ footer .footer-color {
   background-color: #79AC78 !important;
   transition: all 0.7s;
 }
+@media screen and (max-width: 1536px) {
+  .btn-pregunta {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .btn-pregunta {
+    width: 100%;
+  }
+}
 
 .contacto {
   width: 100%;
 }
 .contacto h3 {
-  background-image: url(./../img/about-title.webp);
+  background-image: url("./../img/img-title/about-title.webp");
   background-position: center;
   font-family: "Dancing Script", cursive;
   font-weight: 800;
@@ -349,26 +412,37 @@ footer .footer-color {
   justify-content: center;
   height: 100px;
 }
-.contacto div {
-  padding: 1rem 3rem;
+.contacto .container {
+  padding: 1rem 3rem 1rem 3rem;
 }
 @media screen and (max-width: 575px) {
-  .contacto div {
+  .contacto .container {
     padding: 1rem 0.5rem;
   }
 }
-.contacto .form form {
-  padding: 1rem;
+.contacto .container .form form {
+  padding: 1rem 1.5rem;
   height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   background: #B0D9B1;
 }
-.contacto .form form div input {
+.contacto .container .form form div {
+  margin: 0 !important;
+}
+.contacto .container .form form div input {
   font-size: 1.6rem;
-  width: 100%;
   padding: 0.5rem;
+}
+.contacto .container .form form div textarea {
+  font-size: 1.6rem;
+  height: 150px;
+}
+@media screen and (max-width: 1536px) {
+  .contacto .container .form form div .btn {
+    width: 100% !important;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

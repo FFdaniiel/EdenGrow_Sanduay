@@ -1,17 +1,21 @@
 .sobre-nosotros {
+    @include mb(575px){
+        padding: 0;
+    }
     div{
-        @include mb(575px){
-            padding: 1rem;
-    
-        }
+
         .sobre-title{
 
             h3{
+                background-image: url('./../img/img-title/about-title.webp');
                 @include sub-title;
                 color: #fff;
                 padding: 1rem;
             }
-
+            @include mb(575px){
+                padding-top: 1rem;
+        
+            }
         
     }
     }

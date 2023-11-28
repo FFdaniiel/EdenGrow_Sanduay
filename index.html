@@ -149,7 +149,7 @@
                                 de la naturaleza, jardineros apasionados y defensores de la paz y la serenidad que solo
                                 un entorno verde puede brindar.<br>
                             </p>
-                            <a href="#contacto" class="btn btn-primary w-100 p-3 text-center">
+                            <a href="#contacto" class="btn btn-primary w-50 p-3 text-center align-self-center">
                                 Contactanos!</button>
                             </a>
                         </div>
@@ -188,18 +188,18 @@
 
             </div>
         </div>
-        </div>
     </section>
 
     <section id="productos" class="productos bg-white">
         <div class="p-0">
-            <h3 class="text-center text-uppercase ">Productos</h3>
+            <h3 class="text-center text-uppercase productos-title">Productos</h3>
         </div>
         <div class="container-fluid ">
-            <div class="row row-cols-1 row-cols-xs-2 row-cols-sm-2 row-cols-lg-4 g-4 p-sm-3">
+            <div class="row row-cols-1 row-cols-xs-2 row-cols-sm-2 row-cols-lg-4 g-4 p-sm-3 overflow-hidden">
                 <div class="col">
-                    <div class="card h-100">
-                        <img src="./img/alegria-del-hogar.webp" class="card-img-top" alt="Alegria del hogar">
+                    <div class="card">
+                        <img src="./img/alegria-del-hogar.webp" class="card-img-top overflow-hidden"
+                            alt="Alegria del hogar">
                         <div class="card-body">
                             <div class="clearfix mb-3 border-bottom">
                                 <span class="float-start">Alegria del hogar</span>
@@ -216,7 +216,8 @@
                 </div>
                 <!-- Fin card -->
                 <div class="col">
-                    <div class="card h-100"> <img src="./img/lavanda-planta.webp" class="card-img-top" alt="Lavanda">
+                    <div class="card h-100"> <img src="./img/lavanda-planta.webp" class="card-img-top overflow-hidden"
+                            alt="Lavanda">
                         <div class="card-body">
                             <div class="clearfix mb-3 border-bottom">
                                 <span class="float-start">Lavanda</span>
@@ -310,87 +311,106 @@
                     </div>
                 </div>
                 <!-- Fin card -->
+                <!-- Fin card -->
+                <div class="col">
+                    <div class="card h-100"> <img src="./img/Conejito.webp" class="card-img-top" alt="Conejito">
+                        <div class="card-body">
+                            <div class="clearfix mb-3 border-bottom"> <span class="float-start">
+                                    Conejito</span> <span class="float-end ">$ 3250</span>
+                            </div>
+                            <h5 class="card-title">Lorem, ipsum dolor sit amet consectetur
+                                adipisicing elit. Veniam
+                                quidem eaque ut eveniet aut quis rerum. Asperiores accusamus
+                                harum ducimus velit
+                                odit ut. Saepe, iste optio laudantium sed aliquam sequi.</h5>
+                        </div>
+                    </div>
+                </div>
+                <!-- Fin card -->
             </div>
         </div>
     </section>
 
     <section id="preguntas-frecuentes" class="preguntas-frecuentes col-12 bg-container text-center">
         <h3 class="text-center text-uppercase p-3">Preguntas frecuentes</h3>
-        <div class="container-fluid bg-container px-5 p-3 align-items-center">
-            <p class="d-block gap-1">
-                <a class="btn btn-pregunta " data-bs-toggle="collapse" href="#collapseExample" role="button"
-                    aria-expanded="false" aria-controls="collapseExample">
-                    ¿Ofrecen consejos de cuidado de plantas?
-                </a>
-            </p>
-            <div class="collapse" id="collapseExample">
-                <div class="card card-body bg-transparent border-success">
-                    Sí, proporcionamos asesoramiento de cuidado de plantas para cada planta que vendemos. ¡Queremos
-                    que
-                    tus plantas prosperen!
+        <div data-aos="fade-left" data-aos-duration="1500" data-aos-delay="300" class="mb-3 p-0">
+
+            <div class="container-fluid bg-container px-5 p-3 align-items-center">
+                <p class="d-block gap-1">
+                    <a class="btn btn-pregunta " data-bs-toggle="collapse" href="#pregunta1" role="button"
+                        aria-expanded="false" aria-controls="pregunta1">
+                        ¿Ofrecen consejos de cuidado de plantas?
+                    </a>
+                </p>
+                <div class="collapse" id="pregunta1">
+                    <div class="card card-body bg-transparent border-success">
+                        Sí, proporcionamos asesoramiento de cuidado de plantas para cada planta que vendemos. ¡Queremos
+                        que
+                        tus plantas prosperen!
+                    </div>
+                    <p></p>
                 </div>
-                <p></p>
-            </div>
-            <!-- Fin pregunta -->
-            <p class="d-block gap-1">
-                <a class="btn btn-pregunta " data-bs-toggle="collapse" href="#pregunta2" role="button"
-                    aria-expanded="false" aria-controls="pregunta2">
-                    ¿Hacen envíos a nivel nacional?
-                </a>
-            </p>
-            <div class="collapse" id="pregunta2">
-                <div class="card card-body bg-transparent border-success">
-                    Sí, realizamos envíos a todo el país para que puedas disfrutar de nuestras plantas en cualquier
-                    lugar de tu elección.
+                <!-- Fin pregunta -->
+                <p class="d-block gap-1">
+                    <a class="btn btn-pregunta " data-bs-toggle="collapse" href="#pregunta2" role="button"
+                        aria-expanded="false" aria-controls="pregunta2" aria-labelledby="pregunta1">
+                        ¿Hacen envíos a nivel nacional?
+                    </a>
+                </p>
+                <div class="collapse" id="pregunta2">
+                    <div class="card card-body bg-transparent border-success ">
+                        Sí, realizamos envíos a todo el país para que puedas disfrutar de nuestras plantas en cualquier
+                        lugar de tu elección.
+                    </div>
+                    <p></p>
                 </div>
-                <p></p>
-            </div>
-            <!-- Fin pregunta -->
-            <p class="d-block gap-1">
-                <a class="btn btn-pregunta " data-bs-toggle="collapse" href="#pregunta3" role="button"
-                    aria-expanded="false" aria-controls="pregunta3">
-                    ¿Tienen una política de devolución?
-                </a>
-            </p>
-            <div class="collapse" id="pregunta3">
-                <div class="card card-body bg-transparent border-success">
-                    Sí, tenemos una política de devolución justa. Si no estás satisfecho con tu compra, contáctanos
-                    y te
-                    ayudaremos.
+                <!-- Fin pregunta -->
+                <p class="d-block gap-1">
+                    <a class="btn btn-pregunta " data-bs-toggle="collapse" href="#pregunta3" role="button"
+                        aria-expanded="false" aria-controls="pregunta3">
+                        ¿Tienen una política de devolución?
+                    </a>
+                </p>
+                <div class="collapse" id="pregunta3">
+                    <div class="card card-body bg-transparent border-success">
+                        Sí, tenemos una política de devolución justa. Si no estás satisfecho con tu compra, contáctanos
+                        y te
+                        ayudaremos.
+                    </div>
+                    <p></p>
                 </div>
-                <p></p>
-            </div>
-            <!-- Fin pregunta -->
-            <p class="d-block gap-1">
-                <a class="btn btn-pregunta " data-bs-toggle="collapse" href="#pregunta4" role="button"
-                    aria-expanded="false" aria-controls="pregunta4">
-                    ¿EdenGrow ofrece opciones de regalos?
-                </a>
-            </p>
-            <div class="collapse" id="pregunta4">
-                <div class="card card-body bg-transparent border-success">
-                    Sí, ofrecemos plantas y arreglos de plantas ideales para regalar. Puedes personalizar tu regalo
-                    para
-                    cualquier ocasión.
+                <!-- Fin pregunta -->
+                <p class="d-block gap-1">
+                    <a class="btn btn-pregunta " data-bs-toggle="collapse" href="#pregunta4" role="button"
+                        aria-expanded="false" aria-controls="pregunta4">
+                        ¿EdenGrow ofrece opciones de regalos?
+                    </a>
+                </p>
+                <div class="collapse" id="pregunta4">
+                    <div class="card card-body bg-transparent border-success">
+                        Sí, ofrecemos plantas y arreglos de plantas ideales para regalar. Puedes personalizar tu regalo
+                        para
+                        cualquier ocasión.
+                    </div>
+                    <p></p>
                 </div>
-                <p></p>
-            </div>
-            <!-- Fin pregunta -->
-            <p class="d-block gap-1">
-                <a class="btn btn-pregunta " data-bs-toggle="collapse" href="#pregunta5" role="button"
-                    aria-expanded="false" aria-controls="pregunta5">
-                    ¿Cómo puedo contactar a EdenGrow para obtener más información?
-                </a>
-            </p>
-            <div class="collapse" id="pregunta5">
-                <div class="card card-body bg-transparent border-success">
-                    Puedes contactarnos a través de la casilla de contacto o llamando al xxx-xxx-xxx. Estamos aquí
-                    para
-                    responder tus preguntas y ayudarte en lo que necesites.
+                <!-- Fin pregunta -->
+                <p class="d-block gap-1">
+                    <a class="btn btn-pregunta " data-bs-toggle="collapse" href="#pregunta5" role="button"
+                        aria-expanded="false" aria-controls="pregunta5">
+                        ¿Cómo puedo contactar a EdenGrow para obtener más información?
+                    </a>
+                </p>
+                <div class="collapse" id="pregunta5">
+                    <div class="card card-body bg-transparent border-success">
+                        Puedes contactarnos a través de la casilla de contacto o llamando al xxx-xxx-xxx. Estamos aquí
+                        para
+                        responder tus preguntas y ayudarte en lo que necesites.
+                    </div>
+                    <p></p>
                 </div>
-                <p></p>
+                <!-- Fin pregunta -->
             </div>
-            <!-- Fin pregunta -->
         </div>
     </section>
 
@@ -403,7 +423,7 @@
             <div class="map col-md-7 col-sm-12">
                 <iframe
                     src="https://www.google.com/maps/embed?pb=!1m13!1m8!1m3!1d11542.503858428787!2d62.18442900000001!3d52.479121000000006!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNTLCsDI4JzQ3LjEiTiA2MsKwMTEnMDguNCJF!5e1!3m2!1ses-419!2sar!4v1698332239210!5m2!1ses-419!2sar"
-                    width="950" height="550" style="border:0;" allowfullscreen="" loading="lazy"
+                    width="100%" height="550" style="border:0;" allowfullscreen="" loading="lazy"
                     referrerpolicy="no-referrer-when-downgrade" class="container-fluid"></iframe>
             </div>
             <div class="form col-md-5 col-sm-12">
@@ -422,7 +442,7 @@
                     </div>
                     <div class="mb-3">
                         <label for="exampleFormControlTextarea1" class="form-label ">Mensaje</label>
-                        <textarea required class="form-control" id="exampleFormControlTextarea1" rows="10"></textarea>
+                        <textarea required class="form-control " id="exampleFormControlTextarea1" rows="10"></textarea>
                     </div>
                     <div class="cmb-3">
                         <button type="submit" class="btn btn-primary w-25 p-3">Enviar</button>

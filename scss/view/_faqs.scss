@@ -1,14 +1,27 @@
 .preguntas-frecuentes{
     h3{
+        background-image: url('./../img/img-title/about-title.webp');
         @include sub-title;
 
+    }
+    .card-body{
+        width: 50%!important;
+        margin-left: 25%!important;
+        @include mb(1536px){
+            width: 100%!important;
+            margin-left: 0!important;
+        }
+        @include mb(768px){
+            width: 100%!important;
+            margin-left: 0!important;
+        }
     }
 
 }
 
 
 .btn-pregunta{
-    width: 100%;
+    width: 50%;
     background: $color-verde-3;
     color: #fff;
     font-size: 2rem;
@@ -18,4 +31,11 @@
         background-color: $color-verde-3!important;
         transition: all .7s;
     }
+    @include mb(1536px){
+        width: 100%;
+    }
+    @include mb(768px){
+        width: 100%;
+    }
+
 }
