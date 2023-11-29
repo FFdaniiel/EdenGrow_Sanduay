@@ -73,6 +73,10 @@
                 font-size: $font-medium;
         
             }
+            @include mb(576px) {
+                left: 40%;
+        
+            }
     
         }
     }

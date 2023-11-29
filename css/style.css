@@ -87,7 +87,7 @@ textarea {
 }
 
 .container-fluid a img {
-  width: 100px;
+  width: 90px;
 }
 .container-fluid a h3 {
   line-height: 0;
@@ -221,6 +221,19 @@ footer .footer-color {
 
 .sobre-img-sub {
   height: 200px;
+  width: 425px;
+}
+@media screen and (max-width: 768px) {
+  .sobre-img-sub {
+    height: 425px;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 576px) {
+  .sobre-img-sub {
+    height: auto;
+    width: 425px;
+  }
 }
 
 .inicio-portada {
@@ -306,6 +319,11 @@ footer .footer-color {
     font-size: 1.6rem;
   }
 }
+@media screen and (max-width: 576px) {
+  .inicio-portada .inicio-portada-container .inicio-portada-title h1 {
+    left: 40%;
+  }
+}
 
 .productos {
   padding: 0;
@@ -325,23 +343,34 @@ footer .footer-color {
   height: 100px;
   height: 100px;
 }
+.productos div.container-fluid {
+  width: 75%;
+}
+@media screen and (max-width: 1200px) {
+  .productos div.container-fluid {
+    width: 100%;
+  }
+}
 @media screen and (max-width: 575px) {
-  .productos div .row {
+  .productos div.container-fluid .row {
     padding: 2rem;
   }
 }
-.productos div .row .col {
+.productos div.container-fluid .row .col {
   padding: 1rem;
   align-items: center;
 }
-.productos div .row .col .card {
+.productos div.container-fluid .row .col .card {
   border: none;
   transition: scale 0.7s ease-out;
 }
-.productos div .row .col .card:hover {
+.productos div.container-fluid .row .col .card:hover {
   scale: 1.02;
 }
-.productos div .row .col .card .card-body {
+.productos div.container-fluid .row .col .card .card-img-top {
+  width: 100%;
+}
+.productos div.container-fluid .row .col .card .card-body {
   border: 1px solid #79AC78;
   border-top: none;
   border-end-end-radius: 2rem;
@@ -391,7 +420,7 @@ footer .footer-color {
   background-color: #79AC78 !important;
   transition: all 0.7s;
 }
-@media screen and (max-width: 1536px) {
+@media screen and (max-width: 1200px) {
   .btn-pregunta {
     width: 100%;
   }
@@ -440,7 +469,7 @@ footer .footer-color {
   padding: 0.5rem;
 }
 .contacto .container .form form div textarea {
-  font-size: 1.6rem;
+  font-size: 1.6rem !important;
   height: 150px;
 }
 @media screen and (max-width: 1536px) {

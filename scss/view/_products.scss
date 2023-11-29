@@ -9,27 +9,36 @@ div{
         @include sub-title;
         height: 100px;
     }
-.row{
-    @include mb(575px){
-        padding: 2rem;
+&.container-fluid{
+    width: 75%;
+    @include mb(1200px){
+        width: 100%;
     }
-    .col{
-        padding: 1rem;
-        align-items: center;
-    .card{
-        border: none;
-        transition: scale .7s ease-out;        
-        &:hover{
-            scale: 1.02;
+    .row{
+        @include mb(575px){
+            padding: 2rem;
         }
-        .card-body{
-            border: 1px solid $color-verde-3;
-            border-top: none;
-            border-end-end-radius: 2rem;
-            border-end-start-radius: 2rem;
-        }
-}
-}
-}
+        .col{
+            padding: 1rem;
+            align-items: center;
+        .card{
+            border: none;
+            transition: scale .7s ease-out;        
+            &:hover{
+                scale: 1.02;
+            }
+            .card-img-top{
+                width: 100%;
+            }
+            .card-body{
+                border: 1px solid $color-verde-3;
+                border-top: none;
+                border-end-end-radius: 2rem;
+                border-end-start-radius: 2rem;
+            }
+    }
+    }
+    }
+    }
 }
 }

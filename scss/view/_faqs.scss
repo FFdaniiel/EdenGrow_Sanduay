@@ -32,7 +32,7 @@
         background-color: $color-verde-3!important;
         transition: all .7s;
     }
-    @include mb(1536px){
+    @include mb(1200px){
         width: 100%;
     }
     @include mb(768px){

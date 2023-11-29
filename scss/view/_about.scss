@@ -22,4 +22,13 @@
 }
 .sobre-img-sub{
     height: 200px;
+    width: 425px;
+    @include mb(768px){
+        height: 425px;
+        width: 100%;
+    }
+    @include mb(576px){
+        height: auto;
+        width: 425px;
+    }
 }
